@@ -1,0 +1,206 @@
+/* 
+   Pastel Minimalist Style
+   - Thin black borders
+   - No hard shadows
+   - Pastel background colors
+   - Grid layout
+*/
+
+:root {
+    --bg-color: #fafafa;
+    --border-size: 0px;
+    /* Removed borders */
+
+    /* Saturated Pastel Palette */
+    --mint: #38d9a9;
+    /* More saturated mint */
+    --pink: #ff8787;
+    /* More saturated pink */
+    --blue: #4dadf7;
+    /* More saturated blue */
+    --yellow: #ffd43b;
+    /* More saturated yellow */
+    --lavender: #9775fa;
+    /* More saturated lavender */
+    --orange: #ffa94d;
+    /* More saturated orange */
+    --label-color: #333;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+/* The Room Container - Grid Layout */
+.room {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    width: 90%;
+    max-width: 1000px;
+    padding: 40px;
+    background: white;
+    border: none;
+    border-radius: 12px;
+}
+
+/* Grid Item Wrapper */
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    border: none;
+    border-radius: 12px;
+    background: transparent;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.grid-item:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+.label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--label-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Base Item Style */
+.item {
+    border: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    /* Soft shadow since border is gone */
+}
+
+/* Furniture Styling */
+.bed {
+    width: 80px;
+    height: 120px;
+    background: var(--blue);
+    border-radius: 4px;
+}
+
+.bed .pillow {
+    position: absolute;
+    top: 8px;
+    width: 60px;
+    height: 20px;
+    background: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.bed .blanket {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60%;
+    background: var(--pink);
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+}
+
+.sofa {
+    width: 140px;
+    height: 60px;
+    background: var(--lavender);
+    border-radius: 8px;
+}
+
+.tv-set {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tv {
+    width: 80px;
+    height: 50px;
+    background: #444;
+    border-radius: 4px;
+}
+
+.tv .screen {
+    width: 85%;
+    height: 80%;
+    background: #666;
+    border-radius: 2px;
+}
+
+.tv-stand {
+    width: 90px;
+    height: 15px;
+    background: var(--orange);
+    margin-top: 2px;
+    border: none;
+    border-radius: 4px;
+}
+
+.table {
+    width: 100px;
+    height: 60px;
+    background: var(--yellow);
+    border-radius: 4px;
+}
+
+.rug {
+    width: 140px;
+    height: 80px;
+    background: var(--mint);
+    border: none;
+    border-radius: 20px;
+}
+
+.window {
+    width: 80px;
+    height: 80px;
+    background: white;
+}
+
+.glass {
+    width: 70%;
+    height: 70%;
+    background: #e3f2fd;
+    border: none;
+    border-radius: 4px;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #777;
+}
