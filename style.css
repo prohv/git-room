@@ -12,16 +12,15 @@
     /* Removed borders */
 
     /* Saturated Pastel Palette */
-    --mint: #38d9a9;
+    --mint: #bbd938;
     /* More saturated mint */
-    --pink: #87ff9f;
+    --pink: #f187ff;
     /* More saturated pink */
-    --green: #00ff00;
     --blue: #4dadf7;
     /* More saturated blue */
     --yellow: #ffd43b;
     /* More saturated yellow */
-    --lavender: #9775fa;
+    --lavender: #11b5c8;
     /* More saturated lavender */
     --orange: #ffa94d;
     /* More saturated orange */
@@ -137,7 +136,7 @@ header h1 {
 
 .sofa {
     width: 140px;
-    height: 60px;
+    height: 120px;
     background: var(--lavender);
     border-radius: 8px;
 }
@@ -181,7 +180,7 @@ header h1 {
 .rug {
     width: 140px;
     height: 80px;
-    background: var(--green);
+    background: var(--mint);
     border: none;
     border-radius: 20px;
 }
