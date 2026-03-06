@@ -136,9 +136,9 @@ header h1 {
 }
 
 .sofa {
-    width: 140px;
+    width: 1660px;
     height: 60px;
-    background: red;
+    background: rgb(122, 210, 14);
     border-radius: 10px;
 }
 
