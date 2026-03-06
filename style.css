@@ -14,8 +14,9 @@
     /* Saturated Pastel Palette */
     --mint: #38d9a9;
     /* More saturated mint */
-    --pink: #ff8787;
+    --pink: #87ff9f;
     /* More saturated pink */
+    --green: #00ff00;
     --blue: #4dadf7;
     /* More saturated blue */
     --yellow: #ffd43b;
@@ -137,8 +138,8 @@ header h1 {
 .sofa {
     width: 140px;
     height: 60px;
-    background: var(--lavender);
-    border-radius: 8px;
+    background: red;
+    border-radius: 10px;
 }
 
 .tv-set {
@@ -180,7 +181,7 @@ header h1 {
 .rug {
     width: 140px;
     height: 80px;
-    background: var(--mint);
+    background: var(--green);
     border: none;
     border-radius: 20px;
 }
